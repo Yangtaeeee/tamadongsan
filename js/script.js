@@ -58,3 +58,11 @@ document.querySelectorAll('.service-card').forEach(card => {
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Page initialized');
 });
+
+const toggle = document.querySelector('#navi_menubtn');
+const menu = document.querySelector('.nav-menu');
+
+toggle.addEventListener('click', () => (
+    menu.classList.toggle('active')
+    
+));
